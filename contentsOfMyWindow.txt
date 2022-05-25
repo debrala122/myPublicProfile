@@ -1,0 +1,71 @@
+Last login: Thu May 19 18:06:59 on ttys001
+debraxu@Debras-MacBook-Air ~ % cd/Users/debraxu/Documents/22\ Spring/myPublicProfile
+zsh: no such file or directory: cd/Users/debraxu/Documents/22 Spring/myPublicProfile
+debraxu@Debras-MacBook-Air ~ % cd /Users/debraxu/Documents/22\ Spring/myPublicProfile
+debraxu@Debras-MacBook-Air myPublicProfile % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/debraxu/Documents/22 Spring/myPublicProfile/.git/
+debraxu@Debras-MacBook-Air myPublicProfile % git remote add origin https://github.com/debrala122/myPublicProfile.git
+debraxu@Debras-MacBook-Air myPublicProfile % touch .gitignore
+debraxu@Debras-MacBook-Air myPublicProfile % open .
+debraxu@Debras-MacBook-Air myPublicProfile % mkdir lab03
+debraxu@Debras-MacBook-Air myPublicProfile % open .
+debraxu@Debras-MacBook-Air myPublicProfile % cd /Users/debraxu/Documents/22\ Spring/CS5004Lab
+debraxu@Debras-MacBook-Air CS5004Lab % mkdir lab03
+debraxu@Debras-MacBook-Air CS5004Lab % open .
+debraxu@Debras-MacBook-Air CS5004Lab % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   lab02/.idea/workspace.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lab03/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+debraxu@Debras-MacBook-Air CS5004Lab % git add .
+debraxu@Debras-MacBook-Air CS5004Lab % git commit -m"Project initialized"
+[master 46989ce] Project initialized
+ 7 files changed, 43 insertions(+), 2 deletions(-)
+ create mode 100644 lab03/.idea/.gitignore
+ create mode 100644 lab03/.idea/misc.xml
+ create mode 100644 lab03/.idea/modules.xml
+ create mode 100644 lab03/.idea/vcs.xml
+ create mode 100644 lab03/lab03.iml
+debraxu@Debras-MacBook-Air CS5004Lab % git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.75 KiB | 1.75 MiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/debrala122/CS5004Lab.git
+   87782df..46989ce  master -> master
+debraxu@Debras-MacBook-Air CS5004Lab % cd /Users/debraxu/Documents/22\ Spring/myPublicProfile
+
+debraxu@Debras-MacBook-Air myPublicProfile % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+debraxu@Debras-MacBook-Air myPublicProfile % 
