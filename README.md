@@ -1,2 +1,2 @@
 # myPublicProfile
-This is for lab03.
+Hi, this is for my portfolio!
